@@ -1,0 +1,34 @@
+/* ✅ Toast customization */
+.global-toast {
+     background-color: #1d1d21 !important;
+     color: #d6d6d6 !important;
+   }
+   
+   .global-toast .toast-title {
+     color: #ff6913 !important;
+   }
+   
+   .global-toast .toast-description {
+     color: #c2c2c2 !important;
+   }
+   .global-toast .toast-close-button {
+     color: #ff6913 !important;
+   }
+   .global-toast .toast-close-button:hover {
+     color: #ff6913 !important;
+   }
+   .global-toast .toast-close-button:focus {
+     color: #ff6913 !important;
+   }
+   .global-toast .toast-close-button:active {
+     color: #ff6913 !important;
+   }
+   .global-toast .toast-close-button:disabled {
+     color: #ff6913 !important;
+   }
+   .global-toast .toast-close-button:disabled:hover {
+     color: #ff6913 !important;
+   }
+   .global-toast .toast-close-button:disabled:focus {
+     color: #ff6913 !important;
+   } 

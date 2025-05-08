@@ -1,0 +1,13 @@
+export const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
+
+export const TEN_MINUTES = 10 * 60 * 1000;
+
+export const FIVE_MINUTES = 5 * 60 * 1000;
+
+export const STORAGE_PRICING = 0.23 //USD
+
+ //Pinata 
+ export const PINATA_JWT = process.env.PINATA_JWT || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJmYmRkMjg5NS03NmEwLTQxNjAtODBhMC00YTkzZmIwNWY3ZjkiLCJlbWFpbCI6Im1hbmVkZWVwYWsxOTAyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6IkZSQTEifSx7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6Ik5ZQzEifV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSJ9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiIwZTEyYjQ0MDc4MjQ1NWI4MTM0NCIsInNjb3BlZEtleVNlY3JldCI6Ijk5M2FhZWE5MzZjNTQ3YmI4Y2E0Njk3ZWY1YTU5YjAzNjAxMzEzZWFhNTI2ZTk1ZmJiMzdlYjAzY2MxZjVjZTkiLCJleHAiOjE3NzgyNDM5NDh9.YvtSihqe_K_V0jwTFblDuT4W6RcGaOZlTf23gMjvFBM";   
+ export const PINATA_API_SECRET = process.env.PINATA_API_SECRET || "993aaea936c547bb8ca4697ef5a59b03601313eaa526e95fbb37eb03cc1f5ce9";   
+ export const PINATA_API_KEY = process.env.PINATA_API_KEY || "0e12b440782455b81344";   
+ export const NEXT_PUBLIC_GATEWAY_URL = process.env.NEXT_PUBLIC_GATEWAY_URL || "maroon-electrical-kiwi-263.mypinata.cloud"; 
