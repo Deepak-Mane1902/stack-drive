@@ -3,7 +3,7 @@ import 'dotenv/config';
 
 
 //General URL
-export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000  ";
+export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://stack-drive-sage.vercel.app/  ";
  
 //Backend
  export const BETTER_AUTH_SECRET = process.env.BETTER_AUTH_SECRET || "8S25qTJ4iBUvP0WVmk00xD0NnBE3Vvo0";
