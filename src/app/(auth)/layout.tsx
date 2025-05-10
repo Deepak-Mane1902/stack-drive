@@ -15,7 +15,7 @@ const Layout = ({ children }:Children) => {
           </P>
      </div>
      </div>
-     <div className="bg-[#d6d6d6] flex-1 w-full h-full flex items-center justify-center p-4">
+     <div className="bg-[#fff] flex-1 w-full h-full flex items-center justify-center p-4">
           {children}
 
      </div>

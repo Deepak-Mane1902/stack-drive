@@ -25,6 +25,8 @@ import {
 } from "@remixicon/react";
 import { usePathname } from "next/navigation";
 import { SearchBar } from "./search-bar";
+import { StorageDisplay } from "../../../components/ui/custom/storageDisplay";
+
 
 const items = [
   { title: "Documents", url: "/dashboard/documents", icon: RiFilePdf2Fill },
@@ -51,21 +53,22 @@ export function AppSidebar() {
         </SidebarHeader>
         <SidebarSeparator className="bg-[#1d1d21]" />
         <SidebarGroup className="bg-[#101010] text-white">
-          <SidebarGroupLabel className="text-white py-2">Files</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-[#ff6913] py-2 pl-[20px] text-[1.8vw]">Folder</SidebarGroupLabel>
+            <SidebarSeparator className="my-2 bg-[#1d1d21]" />
           <SidebarGroupContent>
-            <SidebarMenu className="bg-transparent text-white space-y-2">
+            <SidebarMenu className="bg-transparent  text-white space-y-2">
               {items.map((item) => {
                 const isActive = mounted ? pathname?.startsWith(item.url) : false;
 
                 return (
                   <SidebarMenuItem key={item.title} className="hover:bg-black">
-                    <SidebarMenuButton asChild>
+                    <SidebarMenuButton asChild className="border-1 border-[#101010] hover:bg-[#1d1d1d] hover:text-[#ff6913] hover:border-[#ff6913] hover:transition-all ease-in-out hover:duration-200">
                       <a
                         href={item.url}
                         className={cn(
                           paragraphVariants({ size: "small", weight: "medium" }),
                           "py-6 px-5 rounded-lg flex items-center gap-2 transition-colors",
-                          isActive && "bg-primary drop-shadow-xl"
+                          isActive && "bg-primary drop-shadow-xl "
                         )}
                       >
                         <item.icon />
@@ -76,6 +79,10 @@ export function AppSidebar() {
                 );
               })}
             </SidebarMenu>
+            <SidebarSeparator className=" mt-4 w-full bg-[#1d1d21]" />
+
+                <StorageDisplay/>
+  
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
