@@ -6,7 +6,7 @@ import 'dotenv/config';
 export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000  ";
  
 //Backend
- export const BETTER_AUTH_SECRET = process.env.BETTER_AUTH_SECRET || "";
+ export const BETTER_AUTH_SECRET = process.env.BETTER_AUTH_SECRET || "8S25qTJ4iBUvP0WVmk00xD0NnBE3Vvo0";
  export const BASE_URL = process.env.BETTER_AUTH_URL || "";
 
  //Database
